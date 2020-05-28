@@ -8,7 +8,7 @@ const productCtrl = new ProductController()
 const orderCtrl = new OrderController()
 
 app.use(cors());
-app.use(express.static("../public_html"));
+app.use(express.static("public_html"));
 app.set('port', process.env.PORT || 3000);
 
 app.use(express.json());

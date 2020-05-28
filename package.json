@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "flashcomponents server",
   "main": "server/index.js",
-  "scripts": {},
+  "scripts": {
+    "devStart": "nodemon server/index.js"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -14,5 +16,7 @@
     "sequelize": "^5.21.10",
     "socket.io": "^2.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
