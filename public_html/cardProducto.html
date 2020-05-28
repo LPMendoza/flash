@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Components</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="./css/toastify.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-light">
+    <!--<nav class="navbar navbar-expand-lg navbar-darker bg-dark shadow fixed-top" id="topMenu">
+        <a class="brand text-danger mr-5">Flash<span class="brand text-white">components</span></a><button
+            class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="text-white fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#">Productos <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-white fas fa-shopping-cart" href="#"></i></a>
+                </li>
+            </form>
+        </div>
+    </nav>-->
+
+   <!--<div class="container-fluid mt-5">
+        <div class="row">
+            <div class="bg-white p-4 d-inline-block col-3 shadow-sm rounded ml-3 mr-3">
+                <p>Filtros</p>
+                <hr>
+            </div>
+            <div class="col-8 row d-inline-block" id="contProducts">
+                <div class="cardProduct col-auto d-inline-block shadow-sm mx-1 bg-white px-0 rounded">
+                    <div class="col-12 py-5 text-center" id="contImage">
+                        <img class="img-thumbnail" src="./img/productos/pngfind.com-arduino-png-6610423.png"
+                            width="240">
+                    </div>
+                    <p class="col-12 text-right mt-3 mb-0 tagProduct">$150.00</p>
+                    <p class="col-12 text-left nameProduct mb-1" id="nameProduct">Arduino</p>
+                    <p class="col-12 text-left shortDesc" id="shortDesc">Arduino con puerto ethernet</p>
+                    <div class="col-12 px-0 mx-0 row contBtnCard">
+                        <button class="btn btn-light col-6 btnDetails"><span class="fas fa-eye mr-2"></span>Ver
+                            detalles</button>
+                        <button class="btn btn-danger text-white col-6 btnAddCart"><span
+                                class="fas fa-cart-plus mr-2"></span>Carrito</button>
+                    </div>
+                </div>
+                <div class="cardProduct col-auto d-inline-block shadow-sm mx-1 bg-white px-0 rounded">
+                    <div class="col-12 py-5 text-center" id="contImage">
+                        <img class="img-thumbnail" src="./img/productos/pngfind.com-arduino-png-6610423.png"
+                            width="240">
+                    </div>
+                    <p class="col-12 text-right mt-3 mb-0 tagProduct">$150.00</p>
+                    <p class="col-12 text-left nameProduct mb-1" id="nameProduct">Arduino</p>
+                    <p class="col-12 text-left shortDesc" id="shortDesc">Arduino con puerto ethernet</p>
+                    <div class="col-12 px-0 mx-0 row contBtnCard">
+                        <button class="btn btn-light col-6 btnDetails"><span class="fas fa-eye mr-2"></span>Ver
+                            detalles</button>
+                        <button class="btn btn-danger text-white col-6 btnAddCart"><span
+                                class="fas fa-cart-plus mr-2"></span>Carrito</button>
+                    </div>
+                </div>
+                <div class="cardProduct col-auto d-inline-block shadow-sm mx-1 bg-white px-0 rounded">
+                    <div class="col-12 py-5 text-center" id="contImage">
+                        <img class="img-thumbnail" src="./img/productos/pngfind.com-arduino-png-6610423.png"
+                            width="240">
+                    </div>
+                    <p class="col-12 text-right mt-3 mb-0 tagProduct">$150.00</p>
+                    <p class="col-12 text-left nameProduct mb-1" id="nameProduct">Arduino</p>
+                    <p class="col-12 text-left shortDesc" id="shortDesc">Arduino con puerto ethernet</p>
+                    <div class="col-12 px-0 mx-0 row contBtnCard">
+                        <button class="btn btn-light col-6 btnDetails"><span class="fas fa-eye mr-2"></span>Ver
+                            detalles</button>
+                        <button class="btn btn-danger text-white col-6 btnAddCart"><span
+                                class="fas fa-cart-plus mr-2"></span>Carrito</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>-->
+
+    <div class="productDetail bg-white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-3">
+                    <button class="btn btn-white btnCloseInfo" title="Cerrar"><span class="fas fa-times"></span></button>
+                </div>
+                <div class="col-12 row mt-5 mx-auto">
+                    <div class="col-6 text-center">
+                        <img class="img-thumbnail" src="./img/productos/pngfind.com-arduino-png-6610423.png"
+                            width="520" id="detailImg">
+                    </div>
+                    <div class="col-5">
+                        <h3 class="font-weight-bold" id="detailName">Arduino</h3>
+                        <hr>
+                        <p id="detailDesc">
+                            Arduino es una plataforma de creación de electrónica de código abierto, la cual está basada
+                            en hardware y software libre, flexible y fácil de utilizar para los creadores y
+                            desarrolladores. Esta plataforma permite crear diferentes tipos de microordenadores de una
+                            sola placa a los que la comunidad de creadores puede darles diferentes tipos de uso.
+                        </p>
+                        <h3 class="text-right font-weight-bold" id="detailPrice">$ 150.00</h3>
+                        <button class="btn shadow-sm btn-dark btn-dark-flash col-auto col-12 mt-3"><span class="fas fa-shopping-cart mr-2"></span> Agregar al carrito</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="./js/listFilter.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
